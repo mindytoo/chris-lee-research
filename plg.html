@@ -101,6 +101,10 @@
                     <small>Why have drones perch?</small>
                 </h2>
                 <p>Drones are massively useful tools in exploration and information gathering in otherwise difficult, dangerous, or costly to reach areas via manned aircraft. Thus as the applications of drones broaden, the variety of terrain they should be able to safely perch on increases. These new landing gear designs enable the vehicles to "perch” on contrary platforms such as branches and wires in addition to planar surfaces while using gravity to maintain stability.</p>
+                <table>
+                    <td><img src="img\plg\edit6.JPG" alt="Drone Stand" style="width:70%"></td>
+                    <td><img src="img\plg\edit3.JPG" alt="Drone Perch" style="width:100%"></td>
+                </table>
             </div>
         </div>
 
@@ -110,6 +114,18 @@
                     <small>Using Gravity for Actuation.</small>
                 </h2>
                 <p>Inspired by the biomechanics of sleeping birds, this design utilizes the weight of the drone to collapse a four bar linkage with a cable running around three of the four joints and to the ends of four grasping digits. As the four bar collapses, it enlongates, causes the cable to be pulled in with the tips of the grapsing digits. The more the drone weighs, the tighter and more stable the grasp is.</p>
+                <p>The drone used is the DJI FlameWheel F550, a UAV featuring 6 motors and a 5.5 meter diagonal wheelbase. When fully outfitted with electronics and motors, the drone weighs approximately 5 lbs. A three cell battery was used as a payload to simulate the weight of the electronics and motors on the chassis.</p>
+                <img src="img\plg\land2.jpg" alt="Front View Landing Sequence" style="width:100%">
+                <br>
+                <br>
+                <img src="img\plg\land1.jpg" alt="Side View Landing Sequence" style="width:100%">
+                <br>
+                <br>
+                <p>A jamming mechanism in the extended configuration of the four-bar directs the force vectors during landing to efficiently collapse the linkage. Fishing line was used as cabling due to its flexibility and lack of friction. These decreased resistances allow for the weight of the hexacoptor to collapse and keep collapsed the linkage. Segmented 3D printed pulleys are located at each joint and guide the cables around the four-bar. Since the cable runs around the horizontal pulleys on the four-bar twice, the four-bar's travel distance upon collapse is less than the true travel distance required to actuate the gripping digits. </p>
+                <table>
+                <td><img src="img\plg\locking.jpg" alt="Leg Locking Mechanism" style="width:90%"></td>
+                <td><p>A servo on each leg of the landing gear controls a 3D printed lock, seen left, that jams the landing gear when fully collapsed. The lock ensures that environmental disturbances will not cause the drone to tip off its perch and unintentionally loosen its grip. The lock is made out of ABS plastic and NinjaFlex. The NinjaFlex acts as a spring that keeps the mechanism in a default ``locked'' position (left). When the servos attached to the top four-bar segment are told to release, they pull on a stiff wire, lifting the hook out of the bottom four-bar segment (right).</p></td>
+                </table>
             </div>
         </div>
 
@@ -118,7 +134,10 @@
                 <h3 class="page-header">The Grip
                     <small>Designing Underacted Grasping.</small>
                 </h3>
-                <p>[hi this is dinter]</p>
+                <p>The legs are equipped with four identical gripping digits that are 3D printed with ABS plastic filament comprising the rigid portions and NinjaFlex flexible plastic filament comprising the spring spine. As the four-bar collapses and the cable pulls, the segments close to form a grip around the object. In order to prevent the segments at the digit tips from curling before grasping the target perch, modifications were made to actuate the segments closest to the base of the landing gear before the latter segments. The task is accomplished through two ways: a gradient of NinjaFlex along the digits and varying the height of each segment. By having the NinjaFlex thinned out near the base of the landing gear allows those segments to actuate first with less resistance. Making the digits higher close to the base of the landing gear increases the distance between the pivoting NinjaFlex and the fishing line which applies the force, effectively increasing the torque and making the pull more effective.</p>
+                <img src="img/plg/FingerRender.JPG" alt="Gripping Digit Render" style="width:100%">
+                <br><br>
+                <p>To further improve the effectiveness of grip, the bottom facing surfaces of the palm and fingers are outfitted with a pad of polyester/vinyl foam mesh. This is a RoHS compliant material that is water, bacteria, and flame resistant and used commonly to increase friction between surfaces for resisting motion. Additionally, the angles between the segments were decreased to increase the surface area of the bottom facing surfaces while maintaining their geometry. This boasts greater contact points.</p>
             </div>
         </div>
 
@@ -135,15 +154,6 @@
             <div class="col-lg-12">
                 <h2 class="page-header">The Second Design
                     <small>Using Hooks to Perch.</small>
-                </h2>
-                <p>[hi this is dinter]</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">The Third Design
-                    <small>Designed For Fixed Wings.</small>
                 </h2>
                 <p>[hi this is dinter]</p>
             </div>
