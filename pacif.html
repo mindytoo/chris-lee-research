@@ -101,6 +101,8 @@
                     <small>Non-Nutritive Sucking.</small>
                 </h2>
                 <p>One of the foremost behaviors of newborns is sucking, either nutritive in which newborns acquire nourishment or non-nutritive which is a self calming mechanism facilitated by the use of pacifiers. However,  the lasting effects of the non-nutritive sucking have not been investigated until recent decades.  A 1986 investigation into the dental health of four year-old children in Skaraborg county concluded a rate of cross-bite being five times higher in children with previous pacifier sucking habits than those without.</p>
+                <center><img src="img/portfolio/pacif-preview.JPG" width="60%" alt="Pacifier and Tesini V1"></center>
+                <br>
                  <p>During sucking, the infant's mouth undergoes a series of peristaltic positions to assist in changing the nipple or pacifier bulb into a swallowable configuration. (1) The infant first uses its tongue to push up the center of the bulb against the mandibular alveolus and teeth. The tongue then ungergoes a wavelike motion from the tip to the back, engaging the pacifier or nipple as it goes. (2) The seond motion is when the tongue tip folds and compresses the pacifier bulb. (3) The bulb has two options at this point, to collapse and fold or to expand compress itself against the upper palate. The tongue enters its third position and "craddles" the bulb as much as it can. (4) As intra-oral pressure peaks, the tongue undergoes a final motion in which it engages the sides of the bulb and continues to deform the bulb.</p>
                 <p>To reduce the possibility of future dental issues in infants, caused by non-nutritive sucking, pediatric dentist, Dr. Dave Tesini and bio-medical engineer, Josh Wiesman have developed a new pacifier geometry that reduces the force caused by tongue movement and suction on specifically the upper palate.</p>
                 <p>Using finite element analysis, we have modeled a pacifier undergoing non-nutritive sucking against the upper palate of an infant and analyzed the deformations of the traditional Soothie brand and newly designed Tommee Tippee pacifiers. Though studies on the effects of non-nutritive pacifier sucking in infants are not definitive, there is a high possibility that prolonged pacifier use leads to cross bite or open bite in growing children.</p>
@@ -146,9 +148,57 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">The Bottom Line
-                    <small>Stress and Deformation Results.</small>
+                    <small>Current Results and Future Work.</small>
                 </h2>
-                <p>[hi this is dinter]</p>
+                <p>From running different scenarios and building up complexities, we can make a few initial comparisons between the bulb designs and their performance in an infant mouth.</p>
+                <p>After the initial upwards pressure by the tongue, bulb width deformation and maximum palate Von Mises stress was found for Tesini's two designs and the commercially available Soothie brand bulb. The pressure is applied linearly to .8688 psi over the course of 1 second.</p>
+                <table style="width:80%" align="center">
+                    <tr align="center">
+                        <td><b>Pacifier</b></td>
+                        <td><b>Bulb Deformation</b></td>
+                        <td><b>Percent Deformation</b></td>
+                        <td><b>Max Palate Stress</b></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Tesini V1</td>
+                        <td>-0.0011 in</td>
+                        <td> 0.1157%</td>
+                        <td>2.756e5 Pa</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Tesini V2</td>
+                        <td>-0.0032 in</td>
+                        <td>0.3855%</td>
+                        <td>1.240e6 Pa</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Soothie</td>
+                        <td>-0.0040 in</td>
+                        <td> 0.8333%</td>
+                        <td>1.389e5 Pa</td>
+                    </tr>
+                </table>
+                <br>
+                <p>The second set of parisaltic motions were then applied as pressures on the side of the Tommee Tippee and Soothie brand bulbs. The bulb deformations were recorded again.</p>
+                <table style="width:80%" align="center">
+                    <tr align="center">
+                        <td><b>Pacifier</b></td>
+                        <td><b>Bulb Deformation</b></td>
+                        <td><b>Percent Deformation</b></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Tesini V1</td>
+                        <td>-0.0011 in</td>
+                        <td> 0.1157%</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Soothie</td>
+                        <td>-0.0244 in</td>
+                        <td> 5.0833%</td>
+                    </tr>
+                </table>
+                <br>
+                <p>Working non-linear, dynamic simulations for the Soothie brand and Tommee Tippee pacifiers were finalized by the end of summer 2015. However, due to meshing errors, working non-linear, dynamic simulations for the NUK pacifier and Tesini's second design were not reached. CAD models and simulation instructions for all four are available to the next research team but the findings for comparison across all four pacifier designs are not currently available and should be pursued in the future.</p>
             </div>
         </div>
 
@@ -205,7 +255,7 @@
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; A Mindy Tieu Website</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4"><!--
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -213,13 +263,13 @@
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="http://www.olin.edu/faculty/profile/christopher-lee">>> Chris Lee</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="http://www.olin.edu/">>> Olin College</a>
                         </li>
                     </ul>
                 </div>
