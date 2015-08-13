@@ -86,8 +86,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Some really Catchy and Meaningful</div>
-                <div class="intro-heading">Title Here</div>
+                <div class="intro-lead-in">Reinventing the Prostate Phantom</div>
+                <div class="intro-heading">Applying 3D Printing to Cancer Treatment</div>
             </div>
         </div>
     </header>
@@ -98,27 +98,45 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">The Context
-                    <small>Why are we doing this</small>
+                    <small>Current cancer treatments.</small>
                 </h2>
-                <p>[hi this is dinter]</p>
+                <p>Prostate cancer is one of the leading types of cancer in men.  Because external radiation treatment instruments (intensity modulated radiotherapy, the CyberKnife, and the proton beam) have improved rapidly in past years, a "male lumpectomy" is trying to be developed, so that the side effects of more radical treatment can be avoided [1].</p>
+                <p>In developing this new treatment, researchers must be able to prove consistency and accuracy.  Current commercially available phantoms have pre-set locations for their measurements, meaning that treatment plans for any particular individual's prostate and surrounding organs cannot be tested prior to treatment.  Only the "typical" prostate, urethra, and surrounding anatomy can be tested.</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">The Design
-                    <small>What are we doing</small>
+                    <small>Developing prostate phantoms.</small>
                 </h2>
-                <p>[hi this is dinter]</p>
+                <p>The goal of this project is to continue development of 3D-printable, individualized prostate phantoms from CT scans of real patients so that doctors at Boston Medical Center can test their process for designing radiation therapy treatment plans.</p>
+                <p>Over the past two years, we have developed a process for taking CT scans, taking them through Seg3D and 3D slicer to create STLs, and then using Blender, Fusion 360, and Solidworks to process these STLs into useful models.</p>
+                <center>
+                <img src="img\prostate\ProgressionFromCTToFusion.png" alt="From CT to Fusion" style="width:70%">
+                </center>
+                <br>
+                <p>Our current design uses four separate inserts to develop and test the treatment plans - one is an imaging insert, so the doctors can determine where the tumor, urethra, and surrounding organs are.  The other three are dosimetry inserts - they have orthogonal slots, the location of which is determined by points of interest in the imaging insert, in which radiation-sensitive film can by inserted.  When these inserts are scanned, the film shows where the radiation is focused.  Comparing the four scans shows which parts of the organs would be most affected.</p>
+                <center>
+                <img src="img\prostate\Imaging.png" alt="Imaging insert" style="width:50%">
+                </center>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">The Future
-                    <small>What we want to happen.</small>
+                    <small>Iterating with doctors.</small>
                 </h2>
-                <p>[hi this is dinter]</p>
+                <p>In upcoming months and years, we intend to finish redesigning the canister, incorperating feedback from the doctors that we will receive at the end of the summer.  We would also like to combine the three dosimetry inserts into a single design.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">                    <small>References.</small>
+                </h2>
+                <p>[1] Mazzucchelli, R., Scarpelli, M. , Cheng, L. , Lopez-Beltran, A. , Galosi, A.B. , Kirkali, Z. , and Montironi, R., 2012, “Pathology of Prostate Cancer and Focal Therapy (‘Male Lumpectomy’),” Anticancer Research, 29, pp. 5155-5162.</p>
             </div>
         </div>
 
