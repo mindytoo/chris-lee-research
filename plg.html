@@ -141,6 +141,19 @@
                 <center><img src="img/plg/FingerRender.JPG" alt="Gripping Digit Render" style="width:80%"></center>
                 <br>
                 <p>To further improve the effectiveness of grip, each of the bottom facing surfaces are outfitted with a pad of polyester/vinyl <a href = "http://www.mcmaster.com/#85695k1/=yfo977">foam mesh</a>. This is a RoHS compliant material that is water, bacteria, and flame resistant and used commonly to increase friction between surfaces intended to resist motion. Additionally, the angles between the segments are optimized to increase the surface area of the bottom facing surfaces while maintaining their geometry, boasting greater contact points.</p>
+
+                <p>A simulation of the digit actuation during the collapse of the four-bar was created using a MATLAB model. The model is based on the LaGrangian equation of motion for the four bar linkage, acted upon by gravity, shown below.</p>
+
+                <center><img src="img/plg/four-bar-eq.PNG" alt="LaGrangian Four-bar" style="width:40%"></center>
+                <br>
+
+                <p>Where  <i>m<sub>4</sub></i>  is the mass of the bar connecting to the drone,  <i>m<sub>3</sub></i>  and  <i>m<sub>2</sub></i>  are the masses of the intermediate bars,  <i>l<sub>2</sub></i>  is the distance between the pivots on the intermediate bar, <i>d</i> is the distance from the center of mass of the intermediate bar to the lower pivot, <i>g</i> is the acceleration due to gravity, and <i>I</i> is the rotational inertia of the intermediate bar. The intermediate bars are the bars that connect the bar mounted to the drone with the bar attached to the palms. This equation has only one variable, theta while the <i>m, d, g, I</i> and <i>l</i> parameters are held constant. Theta is defined as the angle between the horizontal and the intermediate links.</p>
+
+                <center><iframe width="420" height="315" src="https://www.youtube.com/embed/QY2pIxHRsr8" frameborder="0" allowfullscreen></iframe></center>
+                <br>
+
+                <p>The parameters for the grasp are based on empirical data from experiments using the 3D printed digits. The simulation calculates coefficients for cubic equations for each joint in the digit. The curvature of the digit is based on the distance between the two ends of the four-bar linkage. As the linkage closes, the two ends stretch and pull the fishing line running through the digit. The links in the digit do not close at the same rate as each junction has its own equation of motion.</p>
+
             </div>
         </div>
 
@@ -162,6 +175,12 @@
                 <center><img src="img\plg\handrailperch.jpg" alt="Side View Landing Sequence" style="width:80%"></center>
                 <br>
                 <p>All four dexterity tests were successful and the drone, if landed correctly was able to grip and balance upright on the perch. The vinyl/polyester foam padding provided sufficient friction to prevent slipping on the PVC pipe and stone ledge perches. Despite reaching two digits over the stone ledge and grasping onto the side of the wall while the remaining two digits remained on the level surface of the stone divider, the landing gear remained at rest and the grasping forces against the side wall did not destabilize the perch. The compliant digits were able to wrap around irregular surfaces of the branch and hand rail as well as the flat, orthogonal surfaces of the stone ledge.</p>
+
+                <img src="img/plg/takeoff1.jpg" style="width:100%">
+                <br><br>
+
+                <p>The static configuration of the four-bar landing gear was mounted onto a fully functional DJI FlameWheel F550 and manual flight tests were conducted. Similar to how to marionette tests relied on aligning the palms over the perch before letting the UAV's weight to collapse the linkage, the manual control was not precise enough to perch the UAV onto the branch. Attempts to perch the UAV resulted in the landing gear being unaligned with the branch and the drone missing the perch. A take-off test was successfully conducted from a resting perched position with the drone releasing the branch and entering flight, as shown in \Fref{fig:takeoff}. The weight of the perching landing gear in addition to the weight of the traditional static landing gear was easily carried by the drone.</p>
+
             </div>
         </div>
 
@@ -228,7 +247,7 @@
 
             <div class="col-sm-3 col-xs-6">
                 <a href="pyro.html">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="Pyroshock Analysis">
+                    <img class="img-responsive portfolio-item" src="img/pyro/STS-129_Atlantis_Ready_to_Fly.jpg" alt="Pyroshock Analysis">
                 </a>
             </div>
 
